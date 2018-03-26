@@ -1,7 +1,7 @@
 #!/bin/bash
 
-HOST=myhostname
-USERNAME=myusername
+HOST=arch64
+USERNAME=developer
 HOME_DIR="/home/${USERNAME}"
 SWAP_SIZE=4G
 

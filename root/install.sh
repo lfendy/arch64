@@ -16,7 +16,7 @@ mount "$PARTITION" /mnt
 pacman -Syy
 
 # would recommend to use linux-lts kernel if you are running a server environment, otherwise just use "linux"
-pacstrap /mnt $(pacman -Sqg base | sed 's/^linux$/&-lts/') base-devel grub openssh sudo ntp wget vim
+pacstrap /mnt $(pacman -Sqg base | sed 's/^linux$/&-lts/') base-devel grub openssh sudo ntp wget vim tmux git docker
 genfstab -p /mnt >> /mnt/etc/fstab
 
 cp ./chroot.sh /mnt
